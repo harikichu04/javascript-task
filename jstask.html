@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+//question 1   multiples**************************************************************************************
+
+for(i=1;i<=100;i++)
+{
+if(i%3==0 && i%5!=0)
+console.log("FIZZ");
+else if(i%5==0 && i%3!=0)
+console.log("BUZZ");
+else if(i%3==0 && i%5==0)
+console.log("FIZZBUZZ");
+else
+console.log(i);
+}
+
+//question 2   palindrome****************************************************************************************
+
+
+
+let Reverse="";
+function pali(str){
+    for(let i=str.length-1;i>=0;i--)
+{
+    Reverse+=str[i]
+}
+if(str==Reverse)
+return("palindrome");
+else
+return("not a palindrome");
+
+}
+console.log(pali("malayalam"));
+
+//question 3   largest number****************************************************************************************
+
+function Largest(arr) {
+
+let large = arr[0];
+
+for (let i = 1; i < arr.length; i++)
+ {
+    if (arr[i] > large) {
+        large = arr[i];
+    }
+}
+
+return large;
+}
+let arr1=[1,2,3,4,5,6,7]
+
+console.log(Largest(arr1));  
+
+
+//question 4     occurance******************************************************************************************
+
+function repeat(str){
+    for(let i=0;i<str.length;i++)
+{
+    count=0;
+    for (let j=i+1;j<str.length;j++)
+{
+    if(str[i]===str[j])
+    count++;
+
+}
+console.log(str[i]+" : "+count);
+}
+}
+repeat("harikrishnan");
+
+
+
+
+
+//question 6     factorial**************************************************************************************
+function fact(num){
+    count=1;
+    for(i=1;i<=num;i++)
+    count=count*i;
+return count;
+}
+console.log(fact(5));
+
+///question 7************************************************************************************
+
+
+    function convert(c){
+    f=(c*(9/5))+32;
+    return(f);
+
+}
+console.log(convert(37));
+
+
+//quetion 8*****************************************************************************************
+let arr=[0,1,2,3,4,5,6,7,9,10];
+let end=arr[arr.length-1];
+    for(let itr=0;itr<=end;itr++){
+        if(arr[itr]!=itr){
+        console.log(itr);
+        break;
+        }
+    }
+
+
+
+
+
+
+</Script>
+
+<body>
+    
+</body>
+</html>
